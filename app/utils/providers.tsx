@@ -3,14 +3,6 @@ import { FC, memo, PropsWithChildren } from "react";
 import { UIProvider, extendTheme } from "@yamada-ui/react";
 
 const customTheme = extendTheme({
-  // semantics: {
-  //   colors: {
-  //     primary: "pink.500",
-  //   },
-  //   colorSchemes: {
-  //     primary: "pink",
-  //   },
-  // },
   spaces: {
     xs: "1rem",
     sm: "1.25rem",
