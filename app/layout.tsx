@@ -1,16 +1,15 @@
 import "./globals.css";
-import { UIProvider } from "@yamada-ui/react";
-
+import { Providers } from "./utils/providers";
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <UIProvider>
-      <html lang="en">
-        <body className={`antialiased`}>{children}</body>
-      </html>
-    </UIProvider>
+    <html lang="en">
+      <body className={`antialiased`}>
+        <Providers>{children}</Providers>
+      </body>
+    </html>
   );
 }
